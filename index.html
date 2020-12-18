@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test_Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="img/Raiff_logo.png" alt="logo" class="header-logo">
+            <img src="img/Visa_Logo.png" alt="visa" class="visa-logo">
+            <div class="phone-position">
+                <a href="tel:+78007707562" class="phone-number">8 800 770-75-62</a>
+                <p class="phone-text">Бесплатно по России</p>
+            </div>
+            <div class="phone-position-mob">
+                <a href="tel:+78007707562" class="mobile-tel"></a>
+            </div>
+        </div>
+    </header>
+        <main>
+            <section class="banner-section">
+                <div class="container">
+                    <p class="banner-free">Бесплатное обслуживание</p>
+                    <h1 class="banner-caption">Кредитная карта с кэшбэком <span class="banner-percent">1,5%</span></h1>
+                    <button class="btn banner-btn">Оформить онлайн</button>
+                </div>
+            </section>
+            <section class="conditions-section">
+                <div class="container conditions">
+                   <div class="conditions-card">
+                       <h3 class="conditions-card-caption caption-number">1,5%</h3>
+                       <p class="conditions-card-text">кэшбэк рублями</p>
+                   </div>
+                   <div class="conditions-card">
+                    <h3 class="conditions-card-caption caption-number">0₽</h3>
+                    <p class="conditions-card-text">обслуживание</p>
+                </div>
+                <div class="conditions-card">
+                    <h3 class="conditions-card-caption">до <span class="caption-number">52</span> дней</h3>
+                    <p class="conditions-card-text">без процентов</p>
+                </div>
+                <div class="conditions-card">
+                    <h3 class="conditions-card-caption">до <span class="caption-number">600</span> тыс. ₽</h3>
+                    <p class="conditions-card-text">кредитный лимит</p>
+                </div>
+                </div>
+            </section>
+            <section class="cashback-section">
+                <div class="container">
+                    <h2 class="main-caption cashback-caption">Кэшбэк 1,5% без ограничений</h2>
+                    <div class="cashback-position-card">
+                        <div class="cashback-card card-coin">
+                            <p class="cashback-text">Кэшбэк рублями</p>
+                        </div>
+                        <div class="cashback-card card-bag">
+                            <p class="cashback-text">За любые покупки</p>
+                        </div>
+                        <div class="cashback-card card-car">
+                            <p class="cashback-text">Без лимитов и ограничений</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="credit-section">
+                <div class="small-container">
+                    <h2 class="main-caption credit-caption">Возьмите дополнительный кредит</h2>
+                    <p class="sub-caption">Кредит на любые цели. Получите решение за 2 минуты</p>
+                    <div class="credit-position">
+                        <div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </section>
+            <section class="card-online-section">
+                <div class="small-container">
+                    <h2 class="main-caption credit-caption">Оформите карту онлайн</h2>
+                    <div class="card-online-text-position">
+                        <p class="card-online-text doc">Заполните онлайн-заявку.<br>Это займет не больше 5 минут</p>
+                        <p class="card-online-text message">Через 2 минуты придет смс с решением</p>
+                        <p class="card-online-text card-take">Получите карту с бесплатной доставкой или в отделении</p>
+                    </div>
+                    <div class="form-card-online">
+                        <p class="form-card-online-text">Форма заявки на кредитную карту</p>
+                    </div>
+                </div>
+            </section>
+            <section class="slider-section">
+                <div class="container">
+                    <h2 class="main-caption slider-caption">Удобный мобильный банк</h2>
+                    <p class="sub-caption slide-sub">Пользуйтесь услугами онлайн без визита в отделение</p>
+                    <div class="swiper-container slider-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slider-list-item first-partners"><img src="img/1.png"></div>
+                            <div class="swiper-slide slider-item"><img src="img/2.png"></div>
+                            <div class="swiper-slide slider-list-item"><img src="img/3.png"></div>
+                            <div class="swiper-slide slider-list-item"><img src="img/4.png"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <button class="btn slider-btn">Оформить карту онлайн</button>
+                    <div class="swiper-button-prev btn-prev"></div>
+                    <div class="swiper-button-next btn-next"></div>
+                    <script>
+                        var mySwiper = new Swiper('.slider-container', {
+                            direction: 'horizontal',
+                            loop: true,
+                            slidesPerView: 4,
+                            spaceBetween: 20,
+    
+                            // autoplay: {
+                            //     delay: 3000,
+                            // },
+
+                            pagination: {
+                                el: '.swiper-pagination',
+                            },
+
+                            breakpoints: {
+                                320: {
+                                    slidesPerView: 2,
+                                },
+                                667: {
+                                    slidesPerView: 4,
+                                },
+
+                            },
+
+                            navigation: {
+                                nextEl: '.btn-next',
+                                prevEl: '.btn-prev',
+                            },
+    
+                        })
+                    </script>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="copyrate">
+                <div class="container copyrate-footer-position">
+                    <p class="copyrate-footer">© АО «Райффайзенбанк»</p>
+                    <p class="copyrate-footer-gen">Генеральная лицензия Банка России № 3292 от 17.02.2015. Юридический адрес: 129090, Москва, ул. Троицкая, д. 17, стр. 1</p>
+                </div>
+            </section>
+            <section class="footer-text">
+                <div class="container">
+                    <div class="copyrate-footer-text"><p>Кэшбэк – возврат средств. Кэшбэк начисляется на любые покупки, совершенные по карте VISA Кэшбэк на всё, в размере 1,5 % от суммы расходной операции. Начисленный за календарный месяц кэшбэк выплачивается рублями на счет клиента в течение 7 рабочих дней после окончания соответствующего календарного месяца. Кэшбэк не начисляется за совершение некоторых видов операций согласно правилам программы, размещенным на сайте raif.ru.</p>
+
+                        <p>Сроки проведения акции «Бесплатная кредитная карта «Кэшбэк на всё» для существующих и новых клиентов АО «Райффайзенбанк» — с 01.06.20 по 31.08.20. Информация об организаторе акции, о правилах ее проведения, количестве призов или выигрышей по результатам такой акции, сроках, месте и порядке их получения размещена на на raif.ru или по 8 800 770 09 08.</p>
+                        
+                        <p>В течение льготного периода до 52 дней, проценты по кредиту не начисляются на безналичные операции при условии своевременного внесения минимальных платежей и полного погашения задолженности последнего отчетного периода.  Ставка 19-49% годовых определяется индивидуально по результатам оценки кредитоспособности клиента и категории совершаемых клиентом операций по карте. Лимит кредита возобновляемый 15 000-600 000 руб., срок действия лимита не ограничен сроком действия кредитной карты. Кредитный договор действует до момента исполнения сторонами своих обязательств. Комиссии: за процессинг по картам, подключенным к программе лояльности: не взимается по акции/ вне акции 1490 руб. в год по основной карте, 500 рублей в год по дополнительной карте; за выдачу наличных в банкоматах банка и банков-партнеров – 3% от суммы снятия+300 руб/ в иных банкоматах – 3,9 % + 300 руб.; за переводы на карты банка/на карты других банков — 3% от суммы перевода+300 руб.; за квази-кэш-операции—3% от суммы операции + 300 руб.; за сервис «уведомление об операциях» - 60 руб. по основной/45 руб. по дополнительной карте в мес.; за совершение операции за рубежом в валюте, отличной от валюты счета — 1,65% от суммы операции; за внесение наличных денежных средств через кассу банка — 100 руб. (при внесении до 10 000 руб.).Банк принимает решение о предоставлении кредита на основании всей полученной информации и требований к заемщику. Действительно на 01.06.20. АО «Райффайзенбанк» 0+</p></div>
+                </div>
+            </section>
+        </footer>
+</body>
+</html>
